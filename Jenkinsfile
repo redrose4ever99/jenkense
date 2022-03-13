@@ -20,7 +20,7 @@ pipeline {
 			steps {
 				input ("Do you want to capture results?")
 				junit '**/target/surefire-reports/TEST-*.xml'
-				archiveArtifacts 'target/*.jar'
+			
 			}
 		}
 		stage("Email Build Status"){
